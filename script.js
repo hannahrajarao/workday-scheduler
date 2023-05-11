@@ -50,13 +50,13 @@ function setColors() {
   for(var i=9; i<=17; i++) {
     var eventId = `#hour-${i}`;
     if(currentHour < i) {
-      $(eventId).children('textarea').addClass('future');
+      $(eventId).addClass('future');
     }
     else if(currentHour === i) {
-      $(eventId).children('textarea').addClass('present');
+      $(eventId).addClass('present');
     }
     else {
-      $(eventId).children('textarea').addClass('past');
+      $(eventId).addClass('past');
     }
   }
 }
