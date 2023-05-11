@@ -8,6 +8,8 @@ Color code:
 
 Libraries used: jQuery, Bootstrap, day.js
 
-Link: [https://hannahrajarao.github.io/bootcamp-hw-5-workday-scheduler/](https://hannahrajarao.github.io/bootcamp-hw-5-workday-scheduler/)
+Link: [https://hannahrajarao.github.io/bootcamp-hw-5-workday-scheduler/](https://hannahrajarao.github.io/bootcamp-hw-5-workday-scheduler/)  
+
+![Workday Scheduler Screenshot](assets/workday-scheduler-screenshot.png)
 
 
