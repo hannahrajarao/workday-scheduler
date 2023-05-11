@@ -22,6 +22,7 @@ $(function () {
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
   //
+  loadEvents();
   // TODO: Add code to display the current date in the header of the page.
   $('#currentDay').text(today.format('dddd, MMMM D'));
 });
@@ -32,6 +33,16 @@ function saveEvent(event) {
   const eventId = eventItem.attr('id');
   console.log(eventId, eventText);
   localStorage.setItem(eventId, eventText);
+}
+
+function loadEvents() {
+  for(var i=9; i<=17; i++) {
+    var eventId = `hour-${i}`;
+    var eventText = localStorage.getItem(eventId);
+    if(eventText !== null) {
+      $("#"+eventId).children('textarea').text(eventText);
+    }
+  }
 }
 
 function setColors() {
