@@ -6,6 +6,8 @@ Color code:
 - Red: Present
 - Green: Future  
 
+Libraries used: jQuery, Bootstrap, day.js
+
 Link: [https://hannahrajarao.github.io/bootcamp-hw-5-workday-scheduler/](https://hannahrajarao.github.io/bootcamp-hw-5-workday-scheduler/)
 
 
