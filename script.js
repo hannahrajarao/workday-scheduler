@@ -10,6 +10,7 @@ $(function () {
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
   //
+  $('.time-block').on('click', '.saveBtn', saveEvent);
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
   // attribute of each time-block be used to conditionally add or remove the
@@ -23,6 +24,14 @@ $(function () {
   //
   // TODO: Add code to display the current date in the header of the page.
 });
+
+function saveEvent(event) {
+  const eventItem = $(event.target).parent();
+  const eventText = eventItem.children('textarea').val();
+  const eventId = eventItem.attr('id');
+  console.log(eventId, eventText);
+  localStorage.setItem(eventId, eventText);
+}
 
 function setColors() {
   const currentHour = parseInt(today.format('H'));
